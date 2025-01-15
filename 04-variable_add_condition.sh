@@ -5,8 +5,7 @@
 x=$1
 y=$2
 
-if[-n "$x"] && [-n "$y"];
- then
+if [ -n "$x" ] && [ -n "$y" ]; then
 echo "$y -> Hello $x"
 echo "$x -> Hi $y"
 echo "${y} -> how are you doing $x"
