@@ -5,6 +5,9 @@
 x=$1
 y=$2
 
+# -z "$value" checks if the value is empty.
+# -n "$value" checks if the value is non-empty.
+
 if [ -n "$x" ] && [ -n "$y" ]; then
 echo "$y -> Hello $x"
 echo "$x -> Hi $y"
