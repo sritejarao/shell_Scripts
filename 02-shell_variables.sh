@@ -1,7 +1,10 @@
 #!/bin/bash
 
-echo "Rahim -> Hello Ram"
-echo "Ram -> Hi Rahim"
-echo "Rahim -> how are you doing Ram"
-echo "Ram - doing great and u?"
-echo "Rahim -> Mee too"
+x=Ram
+y=Rahim
+
+echo "$y -> Hello $x"
+echo "$x -> Hi $y"
+echo "$y -> how are you doing $x"
+echo "$x - doing great and u?"
+echo "$y -> Mee too"
