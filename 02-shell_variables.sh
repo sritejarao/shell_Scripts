@@ -1,7 +1,7 @@
 #!/bin/bash
 
-x=Ram
-y=Rahim
+y=Ram
+x=Rahim
 
 echo "$y -> Hello $x"
 echo "$x -> Hi $y"
