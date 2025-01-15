@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo "Hello Ram"
-echo "Hi Rahim"
+echo "Rahim -> Hello Ram"
+echo "Ram -> Hi Rahim"
+echo "Rahim -> how are you doing Ram"
 echo "Ram - doing great and u?"
-echo "Mee too"
+echo "Rahim -> Mee too"
