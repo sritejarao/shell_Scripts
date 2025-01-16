@@ -1,7 +1,7 @@
 #!/bin/bash
 
 num=1;
-num=2;
+num2=2;
 
 if [ $num -gt $num2 ]; then
 echo "${num} is greater than ${num2}"
