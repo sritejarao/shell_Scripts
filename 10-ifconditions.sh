@@ -6,3 +6,4 @@ if [day=="Sun"];then
 echo "Today is holiday"
 else
 echo "Not sunday going to school"
+fi
