@@ -7,7 +7,7 @@ G=\e[32m"
 VALIDATE()
 {
     if [ $? -ne 0 ]; then
-        echo -e " $R $2 is not installed, check once"
+        echo -e "$R $2 is not installed, check once"
         exit 1
     else
         echo  -e "$G $2 installation is complete"
