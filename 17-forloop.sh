@@ -38,10 +38,7 @@ dnf list installed $package
 if [$? -ne 0 ]; then
     echo "$package is not installed, starting installation" &>>$LOGFILENAME
     dnf install $package -y &>>$LOGFILENAME
-    if [ $? -ne 0]
-        echo "$package not installed " &>>$LOGFILENAME
-    else
-        echo "$package installed successfully" &>>$LOGFILENAME
-
-    fi
+    VALIDATE $? "$package"
+    
+fi
 done
