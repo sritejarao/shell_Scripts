@@ -11,7 +11,7 @@ echo "$LOG_FILE"
 #LOG_FILE="Adding_logs"
 
 echo "$day"
-LOGFILENAME="$PATH1/$LOG_FILE-$day.log"
+LOGFILENAME="$PATH1/$LOG_FILE-$TIME_STAMP.log"
 echo "$LOGFILENAME"
 
 
