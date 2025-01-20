@@ -3,9 +3,9 @@
 USER=$(id -u)
 
 PATH="/var/log/script_logs"
-#LOG_FILE=$(echo $0 | cut -d "." -f1)
-LOG_FILE="Adding_logs"
-day="$(date +%Y-%m-%d)"
+LOG_FILE=$(echo $0 | cut -d "." -f1 )
+#LOG_FILE="Adding_logs"
+day=$(date +%y-%m-%d)
 LOGFILENAME="$PATH/$LOG_FILE-$day.log"
 TIME_STAMP=$(date +%Y-%m-%d-%H-%M-%S)
 
