@@ -18,10 +18,10 @@ echo "$LOGFILENAME"
 VALIDATE()
 {
     if [ $? -ne 0 ]; then
-        echo "$2 is not installed, check once"
+        echo "$2 is not installed, check once please" &>> $LOGFILENAME
         exit 1
     else
-        echo " $2 installation is complete"
+        echo " $2 installation is complete" &>> $LOGFILENAME
     fi
 }
 
@@ -29,7 +29,7 @@ if [ $USER -ne 0 ]; then
     echo "To install mysql user should have root access"
     exit 1
 else 
-    echo "This user can only install mysql service"
+    echo "This user can only install mysql service" &>> $LOGFILENAME
 fi
 
 dnf list installed mysql
@@ -42,12 +42,12 @@ then
     VALIDATE $? "MySQl"
 
 else
-    echo "mysql is already installed on this server"
+    echo "mysql is already installed on this server" &>> $LOGFILENAME
     
 fi
 
 dnf list installed git
-VALIDATE $? "Git"
+VALIDATE $? "Git" &>> $LOGFILENAME
 
 dnf list installed ngnix
 VALIDATE $? "ngnix"
