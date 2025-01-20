@@ -4,10 +4,13 @@ USER=$(id -u)
 
 PATH="/var/log/script_logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
+echo "$LOG_FILE"
 #LOG_FILE="Adding_logs"
 day=$(date +%y-%m-%d)
+echo "$day"
 LOGFILENAME="$PATH/$LOG_FILE-$day.log"
-TIME_STAMP=$(date +%Y-%m-%d-%H-%M-%S)
+echo "$LOGFILENAME"
+TIME_STAMP=$(date +%y-%m-%d-%H-%M-%S)
 
 VALIDATE()
 {
