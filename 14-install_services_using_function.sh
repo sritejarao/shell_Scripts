@@ -13,7 +13,7 @@ VALIDATE()
 }
 
 if [ $USER -ne 0 ]; then
-    echo "To install mysql user shoould have root access"
+    echo "To install mysql user should have root access"
     exit 1
 else 
     echo "This user can only install mysql service"
@@ -36,5 +36,7 @@ fi
 dnf list installed git
 VALIDATE $? "Git"
 
-dnf list installed nginix
-VALIDATE $? "nginix"
+dnf list installed ngnix
+VALIDATE $? "ngnix"
+
+exit 0
