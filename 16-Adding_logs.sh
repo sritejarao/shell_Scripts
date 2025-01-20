@@ -3,11 +3,12 @@
 USER=$(id -u)
 
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
+day=$(date +%y-%m-%d)
 PATH="/var/log/script_logs"
 
 echo "$LOG_FILE"
 #LOG_FILE="Adding_logs"
-day=$(date +%y-%m-%d)
+
 echo "$day"
 LOGFILENAME="$PATH/$LOG_FILE-$day.log"
 echo "$LOGFILENAME"
