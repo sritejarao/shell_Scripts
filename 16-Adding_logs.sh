@@ -5,13 +5,13 @@ USER=$(id -u)
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
 day=$(date +%y-%m-%d)
 TIME_STAMP=$(date +%y-%m-%d-%H-%M-%S)
-PATH="/var/log/script_logs"
+PATH1="/var/log/script_logs"
 
 echo "$LOG_FILE"
 #LOG_FILE="Adding_logs"
 
 echo "$day"
-LOGFILENAME="$PATH/$LOG_FILE-$day.log"
+LOGFILENAME="$PATH1/$LOG_FILE-$day.log"
 echo "$LOGFILENAME"
 
 
