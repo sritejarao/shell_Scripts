@@ -35,3 +35,6 @@ fi
 
 dnf list installed git
 VALIDATE $? "Git"
+
+dnf list installed nginix
+VALIDATE $? "Git"
