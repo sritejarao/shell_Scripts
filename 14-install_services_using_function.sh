@@ -5,10 +5,10 @@ USER=$(id -u)
 VALIDATE()
 {
     if [ $? -ne 0 ]; then
-        echo "$2 is not installed, check once"
+        echo -e "\e[31m $2 is not installed, check once"
         exit 1
     else
-        echo "$2 installation is complete"
+        echo -e "\e[32m $2 installation is complete"
     fi
 }
 
@@ -23,13 +23,13 @@ dnf list installed mysql
 
 if [ $? -ne 0 ]
 then
-    echo "MySql is not installed, starting the installation process"
+    echo -e "\e[33m MySql is not installed, starting the installation process"
     dnf install mysql -y
 
     VALIDATE $? "MySQl"
 
 else
-    echo "mysql is already installed on this server"
+    echo -e "\e[32m mysql is already installed on this server"
     
 fi
 
