@@ -33,3 +33,5 @@ else
     exit 1
 fi
 
+dnf list installed git
+VALIDATE $? "Git"
