@@ -41,4 +41,3 @@ VALIDATE $? "Git"
 dnf list installed ngnix
 VALIDATE $? "ngnix"
 
-exit 0
