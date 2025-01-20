@@ -4,7 +4,7 @@ USER=$(id -u)
 
 VALIDATE()
 {
-    if [ $? -ne 0]; then
+    if [ $? -ne 0 ]; then
         echo "$2 is not installed properly, check once"
         exit 1
     else
