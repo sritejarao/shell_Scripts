@@ -5,7 +5,7 @@ USER=$(id -u)
 VALIDATE()
 {
     if [ $? -ne 0 ]; then
-        echo "$2 is not installed properly, check once"
+        echo "$2 is not installed, check once"
         exit 1
     else
         echo "$2 installation is complete"
@@ -37,4 +37,4 @@ dnf list installed git
 VALIDATE $? "Git"
 
 dnf list installed nginix
-VALIDATE $? "Git"
+VALIDATE $? "nginix"
