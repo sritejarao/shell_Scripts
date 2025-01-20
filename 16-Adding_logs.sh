@@ -2,8 +2,9 @@
 
 USER=$(id -u)
 
-PATH="/var/log/script_logs"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
+PATH="/var/log/script_logs"
+
 echo "$LOG_FILE"
 #LOG_FILE="Adding_logs"
 day=$(date +%y-%m-%d)
