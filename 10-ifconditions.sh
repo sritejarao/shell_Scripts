@@ -1,9 +1,7 @@
 #!/bin/bash
-
-day=date | cut -d ' ' -f1
-todat=day
-
-if [ "$todat" = "Mon" ]; then
+day=$(date | cut -d ' ' -f1)
+today="$day"
+if [ "$todat" = "Tue" ]; then
  echo "Today is holiday"
 else
  echo "today is not sunday, going to school"
