@@ -30,7 +30,7 @@ then
 
 else
     echo "mysql is already installed on this server"
-    exit 1
+    
 fi
 
 dnf list installed git
