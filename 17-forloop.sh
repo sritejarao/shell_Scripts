@@ -35,10 +35,12 @@ fi
 for package in $@
 do
 dnf list installed $package
-if [$? -ne 0 ]; then
+if [ $? -ne 0 ]; then
     echo "$package is not installed, starting installation" &>>$LOGFILENAME
     dnf install $package -y &>>$LOGFILENAME
     VALIDATE $? "$package"
+else
+    echo "$package is already installed"
     
 fi
 done
