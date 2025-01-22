@@ -5,5 +5,4 @@ rootuser=$(sudo id -u)
 if [$USER -ne 0 ] ; then
  echo "user is root user"
 else 
- echo "current Need t887787bkbjh8o change to root user"
-figit 
+ echo "current Need thisvdc change to root user"
